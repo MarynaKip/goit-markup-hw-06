@@ -9,6 +9,13 @@
   --header-border-color: #ececec;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
@@ -21,6 +28,12 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 ul,
