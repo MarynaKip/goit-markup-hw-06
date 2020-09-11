@@ -458,13 +458,14 @@ padding-top: 27px;
   padding-bottom: 30px;
 }
 
-.social-list {
-  display: flex;
-  width: 206px;
-  height: 44px;
-  margin-right: 32px;
+.team .social-list {
+    margin-right: 32px;
   margin-left: 32px;
 }
+
+.social-list {
+  display: flex;
+ }
 
 .social-link {
     display: flex;
@@ -715,8 +716,8 @@ footer {
 .container.footer {
   display: flex;
   padding-top: 60px;
-  align-items: baseline;
-  /*padding-bottom: 60px;*/
+  padding-bottom: 60px;
+  align-items: baseline;  
 }
 
 .page-footer .logo {
@@ -729,6 +730,9 @@ footer {
 }
 
 .address {
+  display: flex;
+  flex-direction: column;
+
   color: var(--white-color);
   font-style: normal;
   font-size: 14px;
@@ -736,9 +740,10 @@ footer {
   letter-spacing: 0.03em;
 }
 
+
 .address .link {
   color: var(--secondary-address-color);
-  margin: 9px 0px;
+  margin-top: 9px;
 }
 
 .join {
@@ -746,18 +751,18 @@ footer {
 }
 
 .join-title {
+  display: block;
+
   margin-bottom: 20px;
 
   color: var(--white-color);
 
   font-family: Roboto;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
-}
+ }
 
 .join .social-item .social-link {
   background-color: rgba(255, 255, 255, 0.1);
