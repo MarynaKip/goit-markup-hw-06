@@ -161,7 +161,6 @@ border-radius: 2px;
   background-repeat: no-repeat;
   margin-right: 10px;
 }
-
 .site-contact .item:nth-child(2)::before {
   content: "";
   display: inline-flex;
@@ -360,25 +359,20 @@ background-position: center;
   background-color: var(--secondary-button-color);
   background-position: 50% 50%;
   background-repeat: no-repeat;
-
   width: 270px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
 }
-
 .list-advantages .item:nth-child(1)::before {
   background-image: url(../images/antenna.svg);
 }
-
 .list-advantages .item:nth-child(2)::before {
   background-image: url(../images/clock.svg);
 }
-
 .list-advantages .item:nth-child(3)::before {
   background-image: url(../images/diagram.svg);
 }
-
 .list-advantages .item:nth-child(4)::before {
   background-image: url(../images/astronaut.svg);
 } */
@@ -718,10 +712,11 @@ footer {
   background-color: var(--secondary-bg-color);
 }
 
-.page-footer {
+.container.footer {
   display: flex;
   padding-top: 60px;
-  padding-bottom: 60px;
+  align-items: baseline;
+  /*padding-bottom: 60px;*/
 }
 
 .page-footer .logo {
