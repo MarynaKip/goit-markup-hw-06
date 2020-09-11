@@ -705,6 +705,8 @@ h2.section-title {
 
 .works-description {
   padding: 20px 24px;
+
+  border: 1px solid #EEEEEE;
 }
 
 /* Footer */
