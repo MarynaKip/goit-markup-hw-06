@@ -60,6 +60,42 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="close-modal" data-modal-close></button>
+            <form class="call-back">
+              <h2 class="call-back-title">
+                Оставьте свои данные, мы вам перезвоним
+              </h2>
+              <div class="form-field">
+                <label for="name">Имя</label>
+                <input type="text" id="name" />
+              </div>
+              <div class="form-field">
+                <label for="phone">Телефон</label>
+                <input type="text" id="phone" />
+              </div>
+              <div class="form-field">
+                <label for="email">Почта</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="form-field">
+                <label for="comment">Комментарий</label>
+                <textarea
+                  class="comment"
+                  name="comment"
+                  id="comment"
+                  cols="65"
+                  rows="10"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+              <div class="form-field">
+                <input type="checkbox" name="policy" id="policy" />
+                <label for="policy"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a href="">Условия договора</a>
+                </label>
+              </div>
+              <button class="button primary">Отправить</button>
+            </form>
           </div>
         </div>
       </section>
@@ -414,9 +450,8 @@
           <b class="title">Подпишитесь на рассылку</b>
 
           <div role="group" class="form">
-            <label for="mail" class="label">E-mail</label>
-            <input type="email" name="" value="" id="mail" />
-
+            <input type="email" name="mail" id="mail" />
+            <label for="mail">E-mail</label>
             <button class="button primary">Подписаться</button>
           </div>
         </div>
