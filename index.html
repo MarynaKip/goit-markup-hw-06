@@ -66,14 +66,23 @@
               </h2>
               <div class="form-field">
                 <label for="name">Имя</label>
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#person-modal"></use>
+                </svg>
                 <input type="text" id="name" />
               </div>
               <div class="form-field">
                 <label for="phone">Телефон</label>
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#phone-modal"></use>
+                </svg>
                 <input type="text" id="phone" />
               </div>
               <div class="form-field">
                 <label for="email">Почта</label>
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#email-modal"></use>
+                </svg>
                 <input type="email" id="email" />
               </div>
               <div class="form-field comment">
@@ -87,13 +96,19 @@
                   placeholder="Введите текст"
                 ></textarea>
               </div>
-              <div class="checkbox">
-                <input type="checkbox" name="policy" id="policy" />
-                <label for="policy"
+                              
+                <label class="checkbox-field" for="policy"
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="policy"
+                  id="policy"
+                />
+                <span class="check-box"></span>
                   >Соглашаюсь с рассылкой и принимаю
                   <a href="">Условия договора</a>
                 </label>
-              </div>
+              
               <button class="button primary">Отправить</button>
             </form>
           </div>
