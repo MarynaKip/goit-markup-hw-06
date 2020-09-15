@@ -59,7 +59,11 @@
 
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button class="close-modal" data-modal-close></button>
+            <button class="close-modal" data-modal-close>
+              <svg class="close-icon" width="11" height="11">
+                <use href="./images/sprite.svg#close-modal"></use>
+              </svg>
+            </button>
             <form class="call-back">
               <h2 class="call-back-title">
                 Оставьте свои данные, мы вам перезвоним
@@ -76,14 +80,15 @@
                 <svg class="modal-icon" width="18" height="18">
                   <use href="./images/sprite.svg#phone-modal"></use>
                 </svg>
-                <input type="text" id="phone" />
+                <input type="tel" id="phone" />
               </div>
               <div class="form-field">
                 <label for="email">Почта</label>
+
+                <input type="email" id="email" />
                 <svg class="modal-icon" width="18" height="18">
                   <use href="./images/sprite.svg#email-modal"></use>
                 </svg>
-                <input type="email" id="email" />
               </div>
               <div class="form-field comment">
                 <label for="comment">Комментарий</label>
@@ -91,24 +96,24 @@
                   class="comment"
                   name="comment"
                   id="comment"
-                  cols="65"
                   rows="10"
                   placeholder="Введите текст"
                 ></textarea>
               </div>
-                              
-                <label class="checkbox-field" for="policy"
+
+              <label class="checkbox-field" for="policy">
                 <input
                   class="checkbox"
                   type="checkbox"
                   name="policy"
                   id="policy"
+                  checked
                 />
                 <span class="check-box"></span>
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a href="">Условия договора</a>
-                </label>
-              
+                Соглашаюсь с рассылкой и принимаю
+                <a class="link" href="">Условия договора</a>
+              </label>
+
               <button class="button primary">Отправить</button>
             </form>
           </div>
