@@ -437,7 +437,7 @@ fill: var(--accent-color);
   overflow: hidden;
 }
 
-.checkbox-field::after {
+.checkbox-label::after {
   content: "";
 
   display: inline-block;
@@ -456,7 +456,7 @@ fill: var(--accent-color);
   border-radius: 2px; 
 }
 
-.checkbox:checked + .checkbox-field::after {
+.checkbox:checked + .checkbox-label::after {
   background-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
   background-position: center;
