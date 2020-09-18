@@ -411,7 +411,7 @@
             <input type="email" name="mail" id="mail" placeholder="E-mail" />
             <!-- <label for="mail">E-mail</label> -->
 
-            <button class="button primary">Подписаться</button>
+            <button type="submit" class="button primary">Подписаться</button>
           </div>
         </div>
       </div>
@@ -419,13 +419,12 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-modal" data-modal-close>
-          <svg class="close-icon" width="11" height="11">
-            <use href="./images/sprite.svg#close-modal"></use>
-          </svg>
-        </button>
-
         <form class="call-back">
+          <button class="close-modal" data-modal-close>
+            <svg class="close-icon" width="11" height="11">
+              <use href="./images/sprite.svg#close-modal"></use>
+            </svg>
+          </button>
           <h2 class="call-back-title">
             Оставьте свои данные, мы вам перезвоним
           </h2>
@@ -470,7 +469,7 @@
               id="policy"
               checked
             />
-            <span class="check-box"></span>
+            <!-- <span class="check-box"></span> -->
             Соглашаюсь с рассылкой и принимаю
             <a class="link" href="">Условия договора</a>
           </label>
